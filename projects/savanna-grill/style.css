@@ -1,0 +1,104 @@
+/* Base body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f0e6; /* brown background */
+  color: #4b2e1e; /* dark brown text */
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #d9bba1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li a {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #4b2e1e;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero.jpeg') center/cover no-repeat;
+  padding: 150px 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.hero h1 { font-size: 50px; }
+.hero button { background: #b36b00; color: #fff; border: none; padding: 12px 25px; cursor: pointer; font-size: 16px; margin-top: 15px; }
+
+/* Featured Menu */
+.featured { padding: 40px; text-align: center; }
+.filters { margin-bottom: 20px; }
+.filters button { margin: 5px; padding: 10px 15px; cursor: pointer; background: #d9bba1; border: none; color: #4b2e1e; border-radius: 5px; }
+
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background: #fff0e0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* keeps images proportional */
+  display: block;
+}
+
+.card:hover { transform: scale(1.05); }
+
+/* Gallery Slider */
+.gallery { padding: 40px; }
+.gallery-slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+.gallery-slider img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.gallery-slider img:hover { transform: scale(1.05); } /* zoom on hover */
+
+/* Reservation Form */
+form input { display: block; margin: 10px auto; padding: 10px; width: 220px; border: 1px solid #cfa78f; border-radius: 5px; }
+form button { background: #b36b00; color: #fff; border: none; padding: 12px 25px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+
+/* Footer */
+footer { background: #d9bba1; padding: 20px; text-align: center; color: #4b2e1e; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards { flex-direction: column; align-items: center; }
+  .gallery-slider img { width: 80%; height: auto; }
+}

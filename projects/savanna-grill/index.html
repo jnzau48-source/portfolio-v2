@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savanna Grill</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">Savanna Grill</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#featured">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reservation">Reservation</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Banner -->
+<header id="hero" class="hero">
+  <h1>Savanna Grill</h1>
+  <p>Where the Savanna Meets the Flame</p>
+  <button onclick="scrollToReservation()">Reserve a Table</button>
+</header>
+
+<!-- Menu / Featured Dishes -->
+<section id="featured" class="featured">
+  <h2>Our Menu</h2>
+  <div class="filters">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('main')">Mains</button>
+    <button onclick="filterMenu('drink')">Drinks</button>
+    <button onclick="filterMenu('dessert')">Desserts</button>
+  </div>
+
+  <div class="cards">
+    <div class="card main">
+      <img src="images/nyama.jpg" alt="Nyama Choma">
+      <h3>Nyama Choma</h3>
+    </div>
+    <div class="card main">
+      <img src="images/tilapia.png" alt="Grilled Tilapia">
+      <h3>Grilled Tilapia</h3>
+    </div>
+    <div class="card main">
+      <img src="images/steak.jpeg" alt="Pepper Steak">
+      <h3>Pepper Steak</h3>
+    </div>
+    <div class="card main">
+      <img src="images/ugali.jpg" alt="Ugali & Sukuma">
+      <h3>Ugali & Sukuma</h3>
+    </div>
+    <div class="card dessert">
+      <img src="images/dessert.jpeg" alt="Dessert">
+      <h3>Dessert</h3>
+    </div>
+    <div class="card drink">
+      <img src="images/drink.jpg" alt="Drink">
+      <h3>Tropical Drink</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Slider -->
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-slider">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+    <img src="images/gallery3.jpg">
+    <img src="images/gallery6.jpeg">
+    <img src="images/gallery7.jpg">
+    <img src="images/gallery8.jpg">
+    <img src="images/gallery9.jpeg">
+  </div>
+</section>
+
+<!-- Reservation Form -->
+<section id="reservation">
+  <h2>Reserve a Table</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Phone Number" required>
+    <input type="date" required>
+    <input type="number" placeholder="Guests" required>
+    <button>Book Now</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <img src="images/restaurant-exterior.jpg" alt="Exterior" width="300">
+  <p>Savanna Grill | Westlands, Nairobi</p>
+  <p>Open Daily: 10AM – 11PM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
