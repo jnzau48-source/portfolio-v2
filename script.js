@@ -11,6 +11,7 @@ document.querySelectorAll('nav a').forEach(link => {
 const heroText = "Joseph Kioko";
 let i = 0;
 const speed = 150;
+
 function typeWriter() {
   if (i < heroText.length) {
     document.getElementById("hero-text").innerHTML += heroText.charAt(i);
@@ -18,5 +19,6 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
 document.getElementById("hero-text").innerHTML = "";
 typeWriter();
