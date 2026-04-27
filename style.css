@@ -92,7 +92,14 @@ header p {
   color: #cccccc;
   font-size: 0.95rem;
 }
-
+.project-card a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+.project-card p {
+  line-height: 1.4;
+}
 .coming-soon {
   text-align: center;
   margin-top: 1rem;
